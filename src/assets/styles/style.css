@@ -1,5 +1,5 @@
+@import url('./fonts.css');
 @import "./global.css";
-@import "./fonts.css";
 @import "./utils.css";
 
 .test {
@@ -8,4 +8,101 @@
 
 .test {
     color: red !important;
+}
+
+
+/* === Задание 5a: Стили для всех параграфов === */
+.text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+}
+
+/* === Задание 5b: Стили для заголовка h1 === */
+.title-1 {
+    font-size: 64px;
+    color: #1F3F68;
+}
+
+/* === Задание 5c: Стили для заголовка h2 === */
+.title-2 {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+/* === Задание 5d: Стили для заголовка h3 === */
+.title-3 {
+    font-size: 36px;
+    text-align: center;
+}
+
+/* === Задание 5e: Стили для заголовков h4 === */
+.title-4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+/* === Задание 5f: Стили для полей ввода (input, textarea) === */
+.input-field {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* === Задание 5g: Стили для кнопки отправки формы === */
+.btn-submit {
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    
+
+    border: none;
+    padding: 15px 50px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* === Задание 5h: Фон для формы на странице "Контакты" === */
+form {
+    background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=1000');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+
+form label {
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* === Задание 5j: Хлебные крошки === */
+.breadcrumbs {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #1F3F68;
+}
+.breadcrumbs a {
+    color: #5A98D0;
+    text-decoration: none;
+}
+.breadcrumbs a:hover {
+    text-decoration: underline;
 }

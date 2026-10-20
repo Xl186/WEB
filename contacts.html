@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="./src/assets/styles/style.css">
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+</head>
+<body>
+    <!-- Шапка сайта: скопирована с главной -->
+    <header>
+        <img src="logo.png" alt="Логотип" style="max-width: 150px;">
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="breadcrumbs">
+            <a href="index.html">Главная</a> <span>/</span> Контакты
+        </div>
+    </header>
+
+    <!-- Контент страницы -->
+    <main>
+        <!-- Заголовок h2 -->
+        <h2 class="title-2">Contact Us</h2>
+        
+        <!-- Параграф (не более 10 символов) -->
+        <p class="text">Привет!</p>
+        
+        <!-- Изображение (не более 350px) -->
+        <img src="office.jpg" alt="Наш офис" style="max-width: 350px;">
+
+        <!-- Заголовок Address -->
+        <h3 class="title-3">Address</h4>
+        <!-- Параграф (не более 7 символов) -->
+        <p class="text">Москва.</p>
+
+        <!-- Заголовок Phone -->
+        <h3 class="title-3">Phone</h4>
+        <!-- Список из 2 телефонов -->
+        <ul>
+            <li>+7 (111) 222-33-44</li>
+            <li>+7 (555) 666-77-88</li>
+        </ul>
+
+        <!-- Заголовок Online service -->
+        <h3 class="title-3">Online service</h4>
+        <!-- Список из 2 ссылок (сайт и почта) -->
+        <ul>
+            <li><a href="https://example.com">example.com</a></li>
+            <li><a href="mailto:support@example.com">support@example.com</a></li>
+        </ul>
+
+        <!-- Заголовок Send us message -->
+        <h3 class="title-3">Send us message</h4>
+        <!-- Форма -->
+        <form action="#">
+            <label for="fullname">Full Name</label><br>
+            <input class="input-field" type="text" id="fullname" name="fullname"><br><br>
+
+            <label for="email">Email</label><br>
+            <input class="input-field" type="email" id="email" name="email"><br><br>
+
+            <label for="message">Message</label><br>
+            <textarea class="input-field" id="message" name="message" rows="4" cols="30"></textarea class="input-field"><br><br>
+
+            <button type="submit" class="btn-submit">submit</button>
+        </form>
+    </main>
+
+    <!-- Подвал сайта: скопирован с главной -->
+    <footer>
+        <h3 class="title-3">Свяжитесь с нами</h3>
+        <p class="text">Всегда рады ответить на ваши вопросы.</p>
+        <hr>
+        <ul>
+            <li>Главный офис в центре</li>
+            <li>+7 (999) 123-45-67</li>
+            <li>info@example.com</li>
+        </ul>
+        <p class="text">Все права защищены</p>
+    </footer>
+</body>
+</html>
