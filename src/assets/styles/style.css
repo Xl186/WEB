@@ -77,7 +77,7 @@
 
 /* === Задание 5h: Фон для формы на странице "Контакты" === */
 form {
-    background-image: url('../bg.jpg'); /* Если картинка лежит прямо в assets */
+    background-image: url('../bg.jpg');
     background-size: cover;
     background-position: center;
     padding: 50px;
