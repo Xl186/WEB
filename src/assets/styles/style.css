@@ -11,40 +11,34 @@
 }
 
 
-/* === Задание 5a: Стили для всех параграфов === */
 .text {
     font-size: 16px;
     line-height: 26px;
     color: #1F3F68;
 }
 
-/* === Задание 5b: Стили для заголовка h1 === */
 .title-1 {
     font-size: 64px;
     color: #1F3F68;
 }
 
-/* === Задание 5c: Стили для заголовка h2 === */
 .title-2 {
     font-weight: 500;
     font-size: 44px;
     text-align: center;
 }
 
-/* === Задание 5d: Стили для заголовка h3 === */
 .title-3 {
     font-size: 36px;
     text-align: center;
 }
 
-/* === Задание 5e: Стили для заголовков h4 === */
 .title-4 {
     font-size: 20px;
     line-height: 30px;
     color: #1F3F68;
 }
 
-/* === Задание 5f: Стили для полей ввода (input, textarea) === */
 .input-field {
     border: 1px solid #356EAD;
     box-sizing: border-box;
@@ -56,26 +50,31 @@
     display: block;
 }
 
-/* === Задание 5g: Стили для кнопки отправки формы === */
 .btn-submit {
-    background: #5A98D0;
-    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-    border-radius: 10px;
-    font-weight: 500;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    
+    box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3), 
+                0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    border-radius: 12px;
+    border: none;
+    padding: 16px 48px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
     font-size: 16px;
-    line-height: 26px;
-    text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
-    
-
-    border: none;
-    padding: 15px 50px;
+    letter-spacing: 1px;
     cursor: pointer;
-    margin-top: 10px;
+    transition: all 0.3s ease;
 }
 
-/* === Задание 5h: Фон для формы на странице "Контакты" === */
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 25px rgba(99, 102, 241, 0.4), 
+                0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
 form {
     background-image: url('../bg.jpg');
     background-size: cover;
@@ -93,16 +92,26 @@ form label {
     display: block;
 }
 
-/* === Задание 5j: Хлебные крошки === */
 .breadcrumbs {
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 14px;
     color: #1F3F68;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
+
 .breadcrumbs a {
     color: #5A98D0;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
+
 .breadcrumbs a:hover {
     text-decoration: underline;
+}
+
+.breadcrumbs span {
+    color: #8da4b3;
+    font-weight: 300;
 }
