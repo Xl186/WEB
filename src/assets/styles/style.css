@@ -93,25 +93,41 @@ form label {
 }
 
 .breadcrumbs {
+    display: flex;
+    background: linear-gradient(to bottom, #a8d1d6, #699ba2);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 
+                inset 0 2px 5px rgba(255, 255, 255, 0.6);
+    width: max-content;
     margin-top: 20px;
-    font-size: 14px;
-    color: #1F3F68;
+    overflow: hidden;
+    font-family: "Times New Roman", serif;
+}
+
+.breadcrumbs .crumb {
+    padding: 12px 35px;
+    color: #111;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
 }
 
-.breadcrumbs a {
-    color: #5A98D0;
-    text-decoration: none;
-    transition: color 0.3s ease;
+.breadcrumbs .crumb:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -15px;
+    top: -10%;
+    height: 120%;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: -3px 0 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
-.breadcrumbs a:hover {
-    text-decoration: underline;
-}
-
-.breadcrumbs span {
-    color: #8da4b3;
-    font-weight: 300;
+.breadcrumbs a.crumb:hover {
+    color: #356EAD;
 }
