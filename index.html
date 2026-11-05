@@ -1,54 +1,293 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <link rel="stylesheet" href="./src/assets/styles/style.css">
     <meta charset="UTF-8">
-    <title>Главная страница</title>
+    <title>IT Website - Lab 3</title>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="Логотип" style="max-width: 150px;">
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+
+    <!-- БЛОК 1: Шапка сайта и Главный экран -->
+    <header class="site-header">
+        <nav class="main-nav">
+            <div class="logo">IT WEBSITE</div>
+            <ul class="nav-list">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Media</a></li>
+                <li><a href="#">Cases</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contacts</a></li>
             </ul>
+            <div class="header-contacts">
+                <a href="tel:+71111111111">+7 (111) 111-11-11</a>
+                <a href="mailto:company@mail.com">company@mail.com</a>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <h1 class="title-1">Мой первый сайт</h1>
-        
-        <p class="text">Это произвольный текст для главной страницы, который отлично смотрится здесь.</p>
-        
-        <h3 class="title-3">О нашей работе</h3>
-        
-        <h4 class="title-4">Мы делаем это качественно и быстро</h4>
-        
-        <p class="text">Короткий текст, не превышающий пятнадцати слов для соблюдения задания.</p>
-        
-        <h3 class="title-3">Наши преимущества</h3>
-        
-        <p class="text">Мы работаем двадцать четыре часа в сутки.</p>
-        
-        <hr>
-    </main>
+    <section class="hero-section">
+        <article class="hero-content">
+            <h1 class="main-title">Development of mobile applications and web services of any complexity</h1>
+            <p class="hero-description">We create mobile applications for iOS, Android that transfer your business to mobile applications of your customers' devices</p>
+            <div class="callback-form-wrapper">
+                <h3>Leave your contacts and we will call you back within 30 minutes</h3>
+                <form class="callback-form">
+                    <input type="tel" placeholder="Phone number">
+                    <input type="text" placeholder="Full name">
+                    <button type="submit">Get consultation</button>
+                </form>
+            </div>
+        </article>
+        <aside class="hero-images">
+            <img src="placeholder1.png" alt="Mobile app 1">
+            <img src="placeholder2.png" alt="Mobile app 2">
+        </aside>
+    </section>
 
-    <footer>
-        <h3 class="title-3">Свяжитесь с нами</h3>
-        
-        <p class="text">Всегда рады ответить на ваши вопросы.</p>
-        
-        <hr>
-        
-        <ul>
-            <li>Главный офис в центре</li>
-            <li>+7 (999) 123-45-67</li>
-            <li>info@example.com</li>
-        </ul>
-        
-        <p class="text">Все права защищены</p>
+    <hr>
+
+    <!-- БЛОК 2: Цикл разработки -->
+    <section class="development-cycle">
+        <article class="cycle-text">
+            <h2>Full development cycle</h2>
+            <p>We use proven technologies</p>
+            <h3>Web</h3>
+            <ul>
+                <li>PHP / JavaScript / Node.JS</li>
+                <li>Web Socket / Socket.io / Vue.js</li>
+                <li>Nuxt / MySQL / Laravel / GO lang</li>
+            </ul>
+            <h3>Mobile</h3>
+            <ul>
+                <li>Swift / Kotlin / Alamofire</li>
+                <li>Firebase / CoreData / Room / Realm</li>
+            </ul>
+        </article>
+        <nav class="cycle-services-menu">
+            <ul>
+                <li><a href="#">iOS development</a></li>
+                <li><a href="#">Android development</a></li>
+                <li><a href="#">Web development</a></li>
+                <li><a href="#">UI/UX design</a></li>
+                <li><a href="#">Testing</a></li>
+                <li><a href="#">Launch</a></li>
+                <li><a href="#">IT consulting</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <hr>
+
+    <!-- БЛОК 3: Отрасли -->
+    <section class="industries-section">
+        <h2>Developed more than 100 projects in 15 industries</h2>
+        <div class="industries-grid">
+            <ul>
+                <li>Social media</li>
+                <li>Fitness and sport</li>
+                <li>Bank</li>
+                <li>Construction</li>
+                <li>Game projects</li>
+            </ul>
+            <ul>
+                <li>Education</li>
+                <li>Auto, transport</li>
+                <li>Medicine, health</li>
+                <li>Restaurants, food delivery</li>
+                <li>Marketplaces</li>
+            </ul>
+            <ul>
+                <li>AR technology</li>
+                <li>TV series</li>
+                <li>Startups</li>
+                <li>Religion</li>
+                <li>Online courses</li>
+            </ul>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- БЛОК 4: Проекты -->
+    <section class="projects-section">
+        <h2>Projects we are proud of</h2>
+        <p>Our software development company is truly proud of the wonderful clients we have worked with.</p>
+        <div class="projects-tabs">
+            <button>I-teka</button>
+            <button>Dauletten</button>
+            <button>Guru Bosch</button>
+            <button>View 100 more projects</button>
+        </div>
+        <article class="project-card">
+            <div class="project-info">
+                <h3>I-teka</h3>
+                <p>The application is designed to search for drugs by availability in pharmacies in cities.</p>
+                <ul class="project-tags">
+                    <li>Business analysis</li>
+                    <li>iOS / Android</li>
+                    <li>QA / UI/UX Design</li>
+                </ul>
+                <div class="project-stats">
+                    <div><span>400%</span><p>User Growth</p></div>
+                    <div><span>200 000</span><p>Active Users</p></div>
+                </div>
+            </div>
+            <div class="project-image">
+                <img src="project-phones.png" alt="I-teka app">
+            </div>
+        </article>
+    </section>
+
+    <hr>
+
+    <!-- БЛОК 5: Обсудить проект -->
+    <section class="discuss-project-section">
+        <article class="discuss-text">
+            <h2>Let's discuss Your project</h2>
+            <p>Let's figure out how to create an effective application, its cost and terms of its development</p>
+        </article>
+        <div class="discuss-form-wrapper">
+            <form class="discuss-form">
+                <input type="tel" placeholder="+7 (702) 517-11-98">
+                <input type="text" placeholder="Ivan Ivanov">
+                <button type="submit">Discuss the project</button>
+            </form>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- БЛОК 6: Этапы разработки -->
+    <section class="stages-section">
+        <h2>Application Development Stages</h2>
+        <div class="stages-container">
+            <div class="stages-column">
+                <article class="stage-card">
+                    <img src="icon.png" alt="Icon">
+                    <h3>Analysis</h3>
+                    <p>We write technical specifications for the development.</p>
+                </article>
+                <article class="stage-card">
+                    <img src="icon.png" alt="Icon">
+                    <h3>Design</h3>
+                    <p>We adopt the customer's corporate identity.</p>
+                </article>
+                <article class="stage-card">
+                    <img src="icon.png" alt="Icon">
+                    <h3>Development</h3>
+                    <p>We create an extensible architecture, write clean code.</p>
+                </article>
+            </div>
+            <div class="stages-column">
+                <article class="stage-card">
+                    <img src="icon.png" alt="Icon">
+                    <h3>Testing</h3>
+                    <p>We carry out functional testing and do bug fixes.</p>
+                </article>
+                <article class="stage-card">
+                    <img src="icon.png" alt="Icon">
+                    <h3>Launching</h3>
+                    <p>We design the application page and publish it.</p>
+                </article>
+                <article class="stage-card">
+                    <img src="icon.png" alt="Icon">
+                    <h3>Support</h3>
+                    <p>We monitor the stability of the application, update it.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- БЛОК 7: Наша команда -->
+    <section class="team-section">
+        <div class="team-info">
+            <h2>Our team</h2>
+            <p>Thousand is a full-cycle digital production company with its own product analytics.</p>
+            <div class="team-stats">
+                <div><h3>28</h3><p>Team members</p></div>
+                <div><h3>+100</h3><p>Projects</p></div>
+                <div><h3>7 years</h3><p>In IT sphere</p></div>
+            </div>
+            <p>All the necessary specialists are on our staff.</p>
+        </div>
+        <div class="team-image">
+            <img src="team-photo.png" alt="Our team">
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- БЛОК 8: Получить книгу -->
+    <section class="book-section">
+        <article class="book-info">
+            <h2>Get the book for free by leaving your contacts</h2>
+            <form class="book-form">
+                <input type="tel" placeholder="Phone number">
+                <input type="text" placeholder="Your full name">
+                <input type="email" placeholder="Email">
+                <button type="submit">Send me ebook</button>
+            </form>
+        </article>
+        <aside class="book-image">
+            <img src="book-cover.png" alt="Book">
+        </aside>
+    </section>
+
+    <hr>
+
+    <!-- БЛОК 9: FAQ -->
+    <section class="faq-section">
+        <h2>FAQ</h2>
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary>What is the cost of a mobile application?</summary>
+                <p>Development time depends directly on the requirements.</p>
+            </details>
+            <details class="faq-item">
+                <summary>How long will development take?</summary>
+                <p>Average development time from start to finished application.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Do you provide a guarantee for the mobile application?</summary>
+                <p>Yes, we provide a guarantee for the application.</p>
+            </details>
+            <details class="faq-item">
+                <summary>I will not tell my idea, do you guarantee confidentiality?</summary>
+                <p>Yes, we sign an NDA before starting the project.</p>
+            </details>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- БЛОК 10: Подвал сайта -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <h2 class="footer-logo">IT WEBSITE</h2>
+            <div class="footer-contacts-grid">
+                <div class="footer-contact-item">
+                    <p>Contact name</p>
+                    <a href="tel:+77783905026">+7 (778) 385 90 26</a>
+                </div>
+                <div class="footer-contact-item">
+                    <p>Post</p>
+                    <a href="mailto:mail@mail.com">mail@mail.com</a>
+                </div>
+                <div class="footer-contact-item">
+                    <p>Address</p>
+                    <p>City city, street st. 90</p>
+                </div>
+                <div class="footer-contact-item">
+                    <p>Leave a request</p>
+                    <button>Leave a request</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>We work throughout world</p>
+        </div>
     </footer>
+
 </body>
 </html>
